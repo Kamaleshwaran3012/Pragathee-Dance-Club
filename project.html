@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pragathee Dance School</title>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body{
+        background-color: rgb(223, 235, 250);
+        margin: 0px;
+        padding: 0 px;
+    }
+    nav{
+        margin: 0px;
+        background: linear-gradient(to top, rgb(223, 235, 250),rgb(86, 178, 239));
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    #logo{
+        margin-left: 10px;
+        margin-top: 10px;
+        height: 100px;
+        width: 120%;
+        border-radius: 10%;
+        mix-blend-mode: darken;
+    }
+    #links
+    {
+        display: flex;
+        align-items: center;
+        flex: 0.5;
+    }
+    #links a{
+        padding: 8px;
+        margin: 8px;
+        color: rgb(255, 255, 255);
+        background-color: rgb(2, 0, 137);
+        border-radius: 5px;
+        position: relative; 
+        transition: background-color 0.3s ease;
+        text-decoration: none;
+
+    }
+    #links a:hover
+    {
+        background-color: rgb(255, 255, 255);
+        color: rgb(4, 0, 255);
+        transform: scale(1.1);
+        border-radius: 5px;
+    }
+    #links .dropdown .dropdown-menu a{
+        color: red;
+        background-color: white;
+        margin: 0px;
+    }
+    #links .dropdown .dropdown-menu a:hover{
+        transform: none;
+        color: rgb(2, 0, 137);
+        background-color: white;
+    }
+    .container{
+        display: flex;
+        justify-content: space-around;
+        margin: 25px;
+    }
+    .container #image1 #img1{
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.5s ease;
+        animation: moveAndAnimate 4s ease infinite;
+        mask-image: radial-gradient(circle, rgb(76, 176, 238) 70%, rgba(163, 66, 66, 0) 100%); /* Firefox and modern browsers */
+    } 
+    .container .cont1{
+        align-items: center;
+    }
+    .container .cont1 h2{
+        font-size: 50px;
+        font-weight: bolder;
+        font-style: italic;
+        color: rgb(2, 0, 137);
+    }
+    .container .cont1 p{
+        font-size: x-large;
+        font-weight: 300;
+        width: 75%;
+    }
+    .container .cont1 #bt1{
+        border: none;
+        background-color: red;
+        transform: all 0.3 ease;
+        color: white;
+        font-size: large;
+        border-radius: 3px;
+        border: 5px solid rgb(144, 4, 4);
+    }
+    .container .cont1 #bt1:hover{
+        background-color: white;
+        transform: scale(1.1);
+        color: red;
+    }
+    .container2{
+        margin:50px 25px 50px 25px;
+        padding: 50px 0px 0px 0px;
+        height: 80%;
+        display: flex;
+        justify-content: space-around;
+        background-color:  rgb(210, 229, 253);
+        border-radius: 10px;
+    }
+    .container2 #image2{
+        width: 100%;
+    }
+    .container2 #image2 #img2{
+        border-radius: 10px;
+        width: 100%;
+        height: 85%;
+        transition: transform 0.5s ease;
+        animation: moveAndAnimate 4s ease infinite;
+        mask-image: radial-gradient(circle, rgb(76, 176, 238) 70%, rgba(163, 66, 66, 0) 100%);
+    }
+    .container2 .cont2{
+        width: 100%;
+        padding: 30px 25px 0px 70px; 
+        
+    }
+    .cont2 h2{
+        font-size: 40px;
+        font-weight: bolder;
+        color: rgb(2, 0, 137);
+    }
+    .cont2 #sline{
+        padding-left: 15px;
+        padding-top: 20px;
+        font-size: large;
+    }
+    .container3{
+        display: flex;
+        justify-content: space-around;
+        margin: 25px;
+    }
+    .cont3 #imag3{
+        width: 100%;
+    }
+    .cont3 h2{
+        font-size: 40px;
+        font-weight: bolder;
+        color: rgb(2, 0, 137);
+    }
+    .cont3 p{
+        padding-left: 15px;
+        padding-right: 25px;
+        padding-top: 20px;
+        font-size: large;
+    }
+    .container3 #image3 #img3{
+        border-radius: 10px;
+        width: 90%;
+        height: 85%;
+        transition: transform 0.5s ease;
+        animation: moveAndAnimate 4s ease infinite;
+        mask-image: radial-gradient(circle, rgb(76, 176, 238) 70%, rgba(163, 66, 66, 0) 100%);
+
+    }
+    .container3 .cont3{
+        width: 100%;
+        height: auto;
+    }
+    .container4{
+        margin:0px 25px 25px 25px;
+        padding: 50px 0px 0px 0px;
+        display: flex;
+        justify-content: space-evenly;
+        background-color:  rgb(210, 229, 253);
+        border-radius: 10px;
+    }
+    #ourclass{
+        margin-top: 50px;
+        font-size: 40px;
+        font-weight: bolder;
+        color: rgb(2, 0, 137);
+        margin-left:25px ;
+        text-decoration:double black;
+    }
+    .card{
+        background-color: rgb(1, 55, 122);
+        color: white;
+        overflow: hidden;
+    }
+    .card-img-top{
+        height: 48%;
+        border-radius: 20px;
+        transition: transform 0.3s ease;
+    }
+    .card-img-top:hover{
+        transform: scale(1.1);
+        
+    }
+    .card-body p{
+        font-size: medium;
+       
+    }
+    .fa {
+    padding: 20px;
+     font-size: 30px;
+     width: 50px;
+     text-align: center;
+      text-decoration: none;
+    }
+
+/* Add a hover effect if you want */
+    .fa:hover {
+         opacity: 0.7;
+    }
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+    .fa-facebook {
+        color: white;
+    }
+    .fa-youtube {
+        color: white;
+    }
+    .fa-linkedin {
+        color: white;
+    }
+    .fa-instagram {
+        color: white;
+    }
+/* Twitter */
+    .fa-twitter {
+        color: white;
+    }
+    @keyframes moveAndAnimate {
+      25% {
+        transform: translateX(25px); 
+        opacity: 1; /* Fully visible */
+      }
+      50% {
+        transform: translateX(50px);
+        opacity: 1; /* Fully visible */
+      }
+      75% {
+        transform: translateX(25px); 
+        opacity: 1; /* Fully visible */
+      }
+      100% {
+        transform: translateX(0px);
+        opacity: 1; /* Fully visible */
+      }
+    }
+</style>
+<body>
+    <nav>
+        <span>
+            <img src="./logo31.jpg" id="logo">
+        </span>
+        <div id="links">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT US</a>
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  CLASSES
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Online Classes</a></li>
+                  <li><a class="dropdown-item" href="#">Bharathanatiyam</a></li>
+                  <li><a class="dropdown-item" href="#">Carnatic</a></li>
+                </ul>
+              </div>
+            <a href="#">EVENTS</a>
+            <a href="#">CONTACT US</a>
+        </div>
+    </nav> 
+    <div class="container">
+        <div class="cont1">
+            <p id="p1" style="font-family: cursive;padding-top: 50px;font-style: italic;">Dance with Us</p>
+            <h2 id="h2">PRAGATHEE dance club</h2>
+            <p>Dance, Music, & Arts Prestige Crafted with Grace</p>
+            <button id="bt1">Contact us</button>
+        </div>
+        <div id="image1">
+            <img src="./image1.jpg" id="img1">
+        </div>
+    </div>
+    <div class="container2">
+        <div id="image2">
+            <img src="./image3.jpg" id="img2">
+        </div>
+        <div class="cont2">
+            <h2>Our Pride</h2>
+            <p id="sline">Pragathee Dance Club is deeply proud of its commitment to nurturing talent and celebrating the rich tradition of dance in all its forms. We take immense pride in offering a space where dancers from all backgrounds can come together, explore their passion for movement, and grow as artists. Our club stands as a beacon of creativity, discipline, and cultural expression, fostering a community that not only learns but also cherishes the art of dance. Through years of dedication, Pragathee Dance Club has become a respected name in the local dance community, known for its inclusivity, excellence, and spirit of collaboration.</p>
+        </div>
+    </div>
+    <div class="container3">
+        <div class="cont3">
+            <h2 id="h3">Pragathee Dance World</h2>
+            <p>Our dance school offers a diverse range of styles, including Bharatanatyam, classical, western, and modern dance. Bharatanatyam provides a strong foundation in Indian classical dance, while our classical dance classes explore various traditional forms. For a more contemporary approach, we offer western and modern dance, allowing students to express themselves through dynamic and innovative movements. Our curriculum nurtures creativity and versatility across diverse dance styles.
+            </p>
+        </div>
+        <div id="image3">
+            <img src="./image4.jpg" id="img3">
+        </div>
+    </div>
+
+    <h2 id="ourclass">Our Classes Description</h2>
+    <div class="container4">
+        <div class="card" style="width: 18rem; border: 5px solid rgb(2, 0, 137);">
+            <img class="card-img-top" src="./bharat.jpg" alt="Card image cap">
+            <div class="card-body" >
+                <h2 style="font-size: larger;font-weight: bold; border-top: 3px dashed rgb(244, 244, 247);">Bharathanatyam</h2>
+              <p class="card-text">Bharatanatyam is a classical Indian dance form from Tamil Nadu, known for its grace, rhythmic footwork, and expressive storytelling. It blends three elements: nritta (pure dance), nritya (expressive dance), and natya (dramatic storytelling).</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem; border: 5px solid rgb(2, 0, 137);">
+            <img class="card-img-top" src="./western.jpg" alt="Card image cap" height="65%">
+            <div class="card-body">
+                <h2 style="font-size: larger;font-weight: bold; border-top: 3px dashed rgb(244, 244, 247);">Western Dance</h2>
+              <p class="card-text">Western dance encompasses a variety of styles originating from Europe and the Americas, including ballet, contemporary, hip-hop, jazz, and more. Each style has its own unique techniques, expressions, and forms of movement. Ballet is known for its structured, graceful movements and emphasis on technique, while contemporary dance allows for more freedom and improvisation. Hip-hop, rooted in urban culture, is energetic and rhythmic.</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem; border: 5px solid rgb(2, 0, 137);">
+            <img class="card-img-top" src="./moder.jpg" alt="Card image cap" height="51%">
+            <div class="card-body">
+                <h2 style="font-size: larger;font-weight: bold; border-top: 3px dashed rgb(244, 244, 247);">Modern Dance</h2>
+              <p class="card-text">Modern dance is a dynamic and expressive form of dance that emerged in the early 20th century as a reaction to the rigid structures of classical ballet. It emphasizes freedom of movement, individuality, and emotional expression. Unlike ballet's formal techniques, modern dance allows dancers to move in more fluid, organic ways, often focusing on the body's natural movements. </p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem; border: 5px solid rgb(2, 0, 137);">
+            <img class="card-img-top" src="./image2.jpg" alt="Card image cap" height="75%">
+            <div class="card-body">
+                <h2 style="font-size: larger;font-weight: bold; border-top: 3px dashed rgb(244, 244, 247);">Classical Dance</h2>
+              <p class="card-text">Classical dance refers to traditional and highly structured dance forms that are rooted in the cultural and historical practices of a particular region or country. These forms typically follow strict techniques, movements, and choreography, often with an emphasis on storytelling, mythology, and symbolism. Classical dances are characterized by their discipline, elaborate costumes, and connection to music and rhythm.</p>
+            </div>
+          </div>
+    </div>
+</body>
+<footer class="footer text-white py-5" style="background-color: rgb(179, 179, 179);">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-100">
+                <h4 style="color:  rgb(2, 0, 137);">About Us</h4>
+                <p>
+                    Pragathee Dance Club is a vibrant community offering diverse dance classes for all levels. 
+                    The club focuses on various styles, including classical, contemporary, and popular dances like Bharatanatyam, Ballet, and Western dance.
+                     With a strong emphasis on discipline, creativity, and self-expression,
+                     Pragathee Dance Club provides a supportive environment for dancers to grow, perform, and showcase their talent.
+                </p>
+            </div>
+            <div class="col-lg-2 col-md-6" style="margin-left: 20px;">
+                <h4 style="color:  rgb(2, 0, 137);">Quick Links</h4>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Home</a></li>
+                    <li><a href="#" class="text-white">About</a></li>
+                    <li><a href="#" class="text-white">Classes</a></li>
+                    <li><a href="#" class="text-white">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 style="color:  rgb(2, 0, 137);">Contact Us</h4>
+                <ul class="list-unstyled">
+                    <li>Kalanjiyam nagar,</li>
+                    <li>Kallakurichi-606213</li>
+                    <li>Email: pragatheedanceclub@gmail.com</li>
+                    <li>Phone: +91 7904520611</li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-10">
+                <h4 style="color:  rgb(2, 0, 137);">Follow Us</h4>
+                <div>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>
