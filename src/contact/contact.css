@@ -1,0 +1,135 @@
+.contact-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f3f4f6;
+  }
+  .contact-box {
+    background-color:  rgb(233, 243, 255);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+  }
+  .contact-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2563eb;
+    margin-bottom: 10px;
+  }
+  .contact-info {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e5e7eb;
+    padding: 50px;
+    margin: 20px;
+  }
+  .contact-info p {
+    font-size: 20px;
+    color: #374151;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 5px 0;
+  }
+  .icon {
+    color: #2563eb;
+  }  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color:  rgb(233, 243, 255);
+  }
+  .contact-form label {
+    font-weight: 600;
+    color: #374151;
+  }
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+  }
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder {
+    color: #9ca3af;
+  }
+  .contact-form textarea {
+    height: 100px;
+    resize: none;
+  }
+  .contact-form input:focus,
+  .contact-form textarea:focus,
+  .contact-form select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 5px rgba(37, 99, 235, 0.5);
+  }
+  .contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .contact-form button:hover {
+    background-color: #1e40af;
+  }
+  .success-message {
+    text-align: center;
+    color: green;
+    font-weight: 600;
+  }
+  .contclass1{
+    background-color: rgb(1, 55, 122);
+    color: aliceblue;
+    height: 300px;
+    width: 100%;
+    }
+    .contclass1 p{
+        font-size: 60px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        padding: 20px;
+        padding-top: 130px;
+    }
+    #contimage{
+      width: 100%;
+      max-height: 250px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 1rem;
+    }
+    .name-row {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    
+    .name-row > div {
+      flex: 1;
+      min-width: 150px;
+    }
+    .inforow{
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+
+    }
+    .inforow > div{
+      flex: 1;
+      min-width: 150px;
+
+    }

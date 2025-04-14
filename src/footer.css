@@ -1,0 +1,37 @@
+footer{
+    background: linear-gradient(to top ,rgb(86, 178, 239), rgb(223, 235, 250));
+    color: black;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    }
+    .fa:hover {
+         opacity: 0.7;
+    }
+    .fa-facebook {
+        color: black;
+    }
+    .fa-youtube {
+        color: black;
+    }
+    .fa-linkedin {
+        color: black;
+    }
+    .fa-instagram {
+        color: black;
+    }
+    /* Twitter */
+    .fa-twitter {
+        color: black;
+    }
+ul li Link{
+    color: black;
+    text-decoration: none;
+}
+.list-unstyled .linkers:hover{
+    opacity: 0.7;
+}

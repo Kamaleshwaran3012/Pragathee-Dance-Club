@@ -1,0 +1,35 @@
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.contain3{
+    display: flex;
+    justify-content: space-around;
+    margin: 25px 0px 25px 0px;
+    padding: 25px;
+    background-color:  rgb(210, 229, 253);
+}
+.cont3 h2{
+    font-size: 40px;
+    font-weight: bolder;
+    color: rgb(2, 0, 137);
+}
+.cont3 p{
+    padding-left: 15px;
+    padding-right: 25px;
+    padding-top: 25px;
+    font-size: large;
+}
+.contain3 .cont3{
+    width: 100%;
+    height: auto;
+}
+#header2{
+    padding-bottom: 30px;
+}
