@@ -1,16 +1,18 @@
-.container2{
-    margin:50px 0px 50px 0px;
+.container2 {
+    margin: 50px 0px 50px 0px;
     padding: 50px 25px 0px 25px;
     height: 80%;
     display: flex;
     justify-content: space-around;
-    background-color:  rgb(233, 243, 255);
+    background-color: rgb(233, 243, 255);
     border-radius: 10px;
 }
-.container2 #image2{
+
+.container2 #image2 {
     width: 100%;
 }
-.container2 #image2 #img2{
+
+.container2 #image2 #img2 {
     border-radius: 10px;
     width: 100%;
     height: 85%;
@@ -18,12 +20,13 @@
     animation: moveAndAnimate 4s ease infinite;
     mask-image: radial-gradient(circle, rgb(76, 176, 238) 70%, rgba(163, 66, 66, 0) 100%);
 }
-.container2 .cont2{
+
+.container2 .cont2 {
     width: 100%;
-    padding: 30px 25px 0px 70px; 
-    
+    padding: 30px 25px 0px 70px;
 }
-.container2 .cont2 button{
+
+.container2 .cont2 button {
     background-color: rgb(11, 0, 171);
     color: white;
     padding: 5px 20px;
@@ -32,54 +35,63 @@
     border: none;
     border-radius: 5px;
 }
-.container2 .cont2 button:hover{
+
+.container2 .cont2 button:hover {
     transform: none;
     color: rgb(2, 0, 137);
     background-color: white;
 }
-.cont2 h2{
+
+.cont2 h2 {
     font-size: 40px;
     font-weight: bolder;
     color: rgb(2, 0, 137);
 }
-.cont2 #sline{
+
+.cont2 #sline {
     padding-left: 15px;
     padding-top: 20px;
     font-size: large;
 }
-.container3{
+
+.container3 {
     display: flex;
     justify-content: space-around;
     margin: 25px;
 }
-.cont3 #imag3{
+
+.cont3 #imag3 {
     width: 100%;
 }
-.cont3 h2{
+
+.cont3 h2 {
     font-size: 40px;
     font-weight: bolder;
     color: rgb(2, 0, 137);
 }
-.cont3 p{
+
+.cont3 p {
     padding-left: 15px;
     padding-right: 25px;
     padding-top: 20px;
     font-size: large;
 }
-.container3 #image3 #img3{
+
+.container3 #image3 #img3 {
     border-radius: 10px;
     width: 90%;
     height: 85%;
     transition: transform 0.5s ease;
     animation: moveAndAnimate 4s ease infinite;
     mask-image: radial-gradient(circle, rgb(76, 176, 238) 70%, rgba(163, 66, 66, 0) 100%);
-
 }
-.container3 .cont3{
+
+.container3 .cont3 {
     width: 100%;
     height: auto;
 }
-.container3 .cont3 button{
+
+.container3 .cont3 button {
     background-color: rgb(11, 0, 171);
     color: white;
     padding: 5px 20px;
@@ -88,35 +100,188 @@
     border: none;
     border-radius: 5px;
 }
-.container3 .cont3 button:hover{
+
+.container3 .cont3 button:hover {
     transform: none;
     color: rgb(2, 0, 137);
     background-color: white;
 }
-.acont1{
+
+.acont1 {
     background-color: rgb(1, 55, 122);
     color: aliceblue;
     height: 300px;
     width: 100%;
+}
+
+.acont1 p {
+    font-size: 60px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 20px;
+    padding-top: 130px;
+}
+
+.acont4 {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(1, 55, 122);
+    color: white;
+    height: 150px;
+    font-size: x-large;
+}
+
+.acont4 #sub {
+    flex: 0.25;
+    align-content: center;
+    margin-left: 100px;
+    border-right: 2px solid black;
+}
+
+/* ===== Responsive Design for Tablets (up to 768px) ===== */
+
+@media (max-width: 768px) {
+    .container2 {
+        flex-direction: column; /* Stack content vertically */
+        padding: 30px 20px; /* Reduce padding */
+        height: auto; /* Auto height for smaller screens */
     }
-    .acont1 p{
-        font-size: 60px;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        padding: 20px;
-        padding-top: 130px;
+
+    .container2 #image2 #img2 {
+        height: 70%; /* Reduce height to fit the screen */
     }
-    .acont4{
-        display: flex;
-        justify-content: center;
-        background-color:  rgb(1, 55, 122);
-        color: white;
-        height: 150px;
-        font-size: x-large;
+
+    .container2 .cont2 {
+        padding: 20px 20px 0px 20px; /* Adjust padding */
     }
-    .acont4 #sub
-    {
-        flex: 0.25;
-        align-content: center;
-        margin-left: 100px;
-        border-right: 2px solid black;
+
+    .container2 .cont2 button {
+        padding: 5px 15px;
+        font-size: medium;
+        margin-top: 10px;
     }
+
+    .cont2 h2 {
+        font-size: 30px; /* Reduce font size */
+    }
+
+    .cont2 #sline {
+        font-size: medium; /* Adjust text size */
+    }
+
+    .container3 {
+        flex-direction: column; /* Stack containers vertically */
+        margin: 20px;
+    }
+
+    .container3 #image3 #img3 {
+        height: 70%; /* Reduce height for smaller screens */
+    }
+
+    .container3 .cont3 button {
+        padding: 5px 15px;
+        font-size: medium;
+        margin-top: 10px;
+    }
+
+    .cont3 h2 {
+        font-size: 30px; /* Adjust font size */
+    }
+
+    .cont3 p {
+        font-size: medium; /* Reduce font size */
+    }
+    .acont1 {
+        background-color: rgb(1, 55, 122);
+        color: aliceblue;
+        width: 100%;
+        height: auto; /* Allow dynamic height */
+        padding: 30px 20px;
+    }
+
+
+    .acont1 p {
+        font-size: 30px;
+        padding: 20px 10px;
+      }
+
+    .acont4 {
+        font-size: large; /* Adjust font size */
+        height: auto; /* Adjust height */
+    }
+
+    .acont4 #sub {
+        margin-left: 50px;
+        border-right: none; /* Remove border for smaller screens */
+    }
+}
+
+/* ===== Responsive Design for Smartphones (up to 480px) ===== */
+
+@media (max-width: 480px) {
+    .container2 {
+        flex-direction: column; /* Stack content vertically */
+        padding: 20px 10px; /* Reduce padding */
+    }
+
+    .container2 #image2 #img2 {
+        height: 60%; /* Reduce height */
+    }
+
+    .container2 .cont2 {
+        padding: 15px 10px 0px 10px; /* Adjust padding */
+    }
+
+    .container2 .cont2 button {
+        padding: 5px 10px;
+        font-size: small;
+        margin-top: 8px;
+    }
+
+    .cont2 h2 {
+        font-size: 24px; /* Reduce font size */
+    }
+
+    .cont2 #sline {
+        font-size: small; /* Reduce font size */
+    }
+
+    .container3 {
+        flex-direction: column; /* Stack content vertically */
+        margin: 15px;
+    }
+
+    .container3 #image3 #img3 {
+        height: 60%; /* Adjust image height */
+    }
+
+    .container3 .cont3 button {
+        padding: 5px 10px;
+        font-size: small;
+        margin-top: 8px;
+    }
+
+    .cont3 h2 {
+        font-size: 24px; /* Adjust font size */
+    }
+
+    .cont3 p {
+        font-size: small; /* Reduce font size */
+    }
+    .acont1 {
+        height: 200px;
+      }
+    .acont1 p {
+        font-size: 24px; /* Further reduce font size */
+        padding-top: 70px; /* Adjust padding */
+    }
+
+    .acont4 {
+        font-size: medium; /* Adjust font size */
+        height: auto; /* Adjust height */
+    }
+
+    .acont4 #sub {
+        margin-left: 30px;
+        border-right: none; /* Remove border */
+    }
+}

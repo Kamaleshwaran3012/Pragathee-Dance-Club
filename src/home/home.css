@@ -1,57 +1,65 @@
-.container1{
-    margin:20px 25px 50px 25px;
+.container1 {
+    margin: 20px 25px 50px 25px;
     padding: 20px 0px 0px 0px;
     height: 80%;
     display: flex;
     justify-content: space-around;
 }
-.container1 #image1{
-    width:50%;
+
+.container1 #image1 {
+    width: 50%;
 }
-.container1 #image1 #img1{
+
+.container1 #image1 #img1 {
     border-radius: 10px;
     width: 100%;
     height: 85%;
     mask-image: radial-gradient(circle, rgb(76, 176, 238) 70%, rgba(163, 66, 66, 0) 100%);
 }
-.container1 .cont1 h2{
+
+.container1 .cont1 h2 {
     font-size: 50px;
     font-weight: bolder;
     font-style: italic;
     color: rgb(2, 0, 137);
 }
-.container1 .cont1 p{
+
+.container1 .cont1 p {
     font-size: x-large;
     font-weight: 300;
     width: 75%;
 }
-.container1 .cont1 #bt1{
+
+.container1 .cont1 #bt1 {
     border: none;
     background-color: rgb(255, 255, 255);
     transform: all 0.3 ease;
     color: rgb(55, 0, 254);
     font-size: large;
     border-radius: 3px;
-    
 }
-.container1 .cont1 #bt1:hover{
+
+.container1 .cont1 #bt1:hover {
     background-color: rgb(55, 0, 254);
     transform: scale(1.1);
     color: rgb(255, 221, 0);
 }
-.container2{
-    margin:50px 25px 50px 25px;
+
+.container2 {
+    margin: 50px 25px 50px 25px;
     padding: 50px 0px 0px 0px;
     height: 80%;
     display: flex;
     justify-content: space-around;
-    background-color:  rgb(233, 243, 255);
+    background-color: rgb(233, 243, 255);
     border-radius: 10px;
 }
-.container2 #image2{
+
+.container2 #image2 {
     width: 100%;
 }
-.container2 #image2 #img2{
+
+.container2 #image2 #img2 {
     border-radius: 10px;
     width: 100%;
     height: 85%;
@@ -59,12 +67,13 @@
     animation: moveAndAnimate 4s ease infinite;
     mask-image: radial-gradient(circle, rgb(76, 176, 238) 70%, rgba(163, 66, 66, 0) 100%);
 }
-.container2 .cont2{
+
+.container2 .cont2 {
     width: 100%;
-    padding: 30px 25px 0px 70px; 
-    
+    padding: 30px 25px 0px 70px;
 }
-.container2 .cont2 button{
+
+.container2 .cont2 button {
     background-color: rgb(11, 0, 171);
     color: white;
     padding: 5px 20px;
@@ -73,54 +82,63 @@
     border: none;
     border-radius: 5px;
 }
-.container2 .cont2 button:hover{
+
+.container2 .cont2 button:hover {
     transform: none;
     color: rgb(2, 0, 137);
     background-color: white;
 }
-.cont2 h2{
+
+.cont2 h2 {
     font-size: 40px;
     font-weight: bolder;
     color: rgb(2, 0, 137);
 }
-.cont2 #sline{
+
+.cont2 #sline {
     padding-left: 15px;
     padding-top: 20px;
     font-size: large;
 }
-.container3{
+
+.container3 {
     display: flex;
     justify-content: space-around;
     margin: 25px;
 }
-.cont3 #imag3{
+
+.cont3 #imag3 {
     width: 100%;
 }
-.cont3 h2{
+
+.cont3 h2 {
     font-size: 40px;
     font-weight: bolder;
     color: rgb(2, 0, 137);
 }
-.cont3 p{
+
+.cont3 p {
     padding-left: 15px;
     padding-right: 25px;
     padding-top: 20px;
     font-size: large;
 }
-.container3 #image3 #img3{
+
+.container3 #image3 #img3 {
     border-radius: 10px;
     width: 90%;
     height: 85%;
     transition: transform 0.5s ease;
     animation: moveAndAnimate 4s ease infinite;
     mask-image: radial-gradient(circle, rgb(76, 176, 238) 70%, rgba(163, 66, 66, 0) 100%);
-
 }
-.container3 .cont3{
+
+.container3 .cont3 {
     width: 100%;
     height: auto;
 }
-.container3 .cont3 button{
+
+.container3 .cont3 button {
     background-color: rgb(11, 0, 171);
     color: white;
     padding: 5px 20px;
@@ -129,45 +147,234 @@
     border: none;
     border-radius: 5px;
 }
-.container3 .cont3 button:hover{
+
+.container3 .cont3 button:hover {
     transform: none;
     color: rgb(2, 0, 137);
     background-color: white;
 }
-.container4{
-    
+
+.container4 {
     padding: 50px 0px 50px 0px;
     display: flex;
     justify-content: space-evenly;
-    background-color:  rgb(210, 229, 253);
+    background-color: rgb(210, 229, 253);
     border-radius: 10px;
 }
-#ourclass{
+
+#ourclass {
     margin-top: 50px;
     font-size: 45px;
     font-weight: bolder;
     color: rgb(2, 0, 137);
-    margin-bottom:25px ;
+    margin-bottom: 25px;
     text-align: center;
-    text-decoration:double black;
+    text-decoration: double black;
 }
-.container4 .card{
+
+.container4 .card {
     background-color: rgb(1, 55, 122);
     color: white;
     overflow: hidden;
 }
-.card-img-top{
+
+.card-img-top {
     height: 48%;
     border-radius: 20px;
     transition: transform 0.3s ease;
-    border-bottom:3px dashed rgb(244, 244, 247);
+    border-bottom: 3px dashed rgb(244, 244, 247);
 }
-.card-img-top:hover{
+
+.card-img-top:hover {
     transform: scale(1.1);
 }
-.card-body p{
+
+.card-body p {
     font-size: medium;
 }
-.card-body h2{
+
+.card-body h2 {
     margin: 15px 0px;
+}
+
+/* Responsive Design */
+
+/* Tablets (768px - 991px) */
+@media (max-width: 991px) {
+    .container1, .container2, .container3, .container4 {
+        flex-direction: column; /* Stack the elements vertically */
+        align-items: center;
+        text-align: center;
+    }
+
+    .container1 #image1,
+    .container2 #image2,
+    .container3 #image3,
+    .container4 .card {
+        width: 80%; /* Set images and cards to 80% width */
+    }
+
+    /* Make sure the content appears below the images */
+    .container1 .cont1, 
+    .container2 .cont2, 
+    .container3 .cont3 {
+        width: 100%;
+        padding: 20px 10px; /* Padding for the text */
+    }
+
+    .container1 .cont1 h2,
+    .container2 h2,
+    .container3 h2 {
+        font-size: 35px; /* Smaller heading for better mobile visibility */
+    }
+
+    .container1 .cont1 p,
+    .container2 #sline,
+    .container3 p {
+        font-size: medium;
+        padding: 0 10px;
+        width: 90%;
+    }
+
+    /* Button Styling */
+    .container2 .cont2 button,
+    .container3 .cont3 button,
+    .container1 .cont1 #bt1 {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .card-img-top {
+        height: auto; /* Set image to auto-height for flexibility */
+    }
+
+    #ourclass {
+        font-size: 35px;
+    }
+}
+
+/* Phones (below 768px) */
+@media (max-width: 767px) {
+    .container1, .container2, .container3, .container4 {
+        flex-direction: column; /* Stack elements vertically */
+        padding: 20px 10px;
+    }
+
+    /* Ensure all images are above content */
+    .container1 #image1,
+    .container2 #image2,
+    .container3 #image3,
+    .container4 .card {
+        width: 100%; /* Full width for images and cards */
+    }
+
+    .container1 .cont1 h2,
+    .container2 h2,
+    .container3 h2,
+    #ourclass {
+        font-size: 28px; /* Smaller heading font size */
+    }
+
+    .container1 .cont1 p,
+    .container2 #sline,
+    .container3 p {
+        font-size: small;
+        width: 100%;
+    }
+
+    .container2 .cont2,
+    .container3 .cont3 {
+        padding: 20px 10px;
+    }
+
+    .container1 #image1,
+    .container2 #image2,
+    .container3 #image3 {
+        width: 100%;
+    }
+
+    .container4 {
+        flex-wrap: wrap;
+    }
+
+    .container4 .card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .card-body h2 {
+        font-size: 20px;
+    }
+
+    .card-body p {
+        font-size: small;
+    }
+}
+
+/* Smartphones (max-width: 480px) */
+@media (max-width: 480px) {
+    .container1, .container2, .container3, .container4 {
+        flex-direction: column;
+        padding: 15px 5px;
+        margin: 10px 0;
+    }
+
+    /* Ensure all content follows below images */
+    .container1 #image1,
+    .container2 #image2,
+    .container3 #image3,
+    .container4 .card {
+        width: 100%; /* Full width for images and cards */
+    }
+
+    .container1 .cont1 h2,
+    .container2 h2,
+    .container3 h2,
+    #ourclass {
+        font-size: 22px; /* Even smaller font size */
+    }
+
+    .container1 .cont1 p,
+    .container2 #sline,
+    .container3 p {
+        font-size: 13px;
+        padding: 0 5px;
+    }
+
+    .container1 .cont1 #bt1,
+    .container2 .cont2 button,
+    .container3 .cont3 button {
+        font-size: medium;
+        padding: 5px 15px;
+        margin: 10px auto;
+    }
+
+    .container2 .cont2,
+    .container3 .cont3 {
+        padding: 15px 5px;
+    }
+
+    .container1 #image1,
+    .container2 #image2,
+    .container3 #image3,
+    .container4 .card {
+        width: 100%;
+    }
+
+    .card-body h2 {
+        font-size: 18px;
+    }
+
+    .card-body p {
+        font-size: 12px;
+    }
+
+    .card-img-top {
+        border-radius: 10px;
+    }
+
+    #ourclass {
+        font-size: 24px;
+        padding: 10px 0;
+    }
 }

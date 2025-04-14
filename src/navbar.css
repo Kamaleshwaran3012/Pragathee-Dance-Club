@@ -1,96 +1,154 @@
-nav{
-    background: linear-gradient(to top, rgb(223, 235, 250),rgb(86, 178, 239));
+nav {
+    background: linear-gradient(to top, rgb(223, 235, 250), rgb(86, 178, 239));
     display: flex;
     justify-content: space-between;
-    padding: 30px 0px;
-   
+    align-items: center;
+    padding: 30px 20px;
+    position: relative;
+    flex-wrap: wrap;
 }
-#logo{
-    margin-left: 10px;
-    margin-top: 10px;
+
+#logo {
     height: 100px;
-    width: 120%;
+    width: auto;
     border-radius: 10%;
     mix-blend-mode: darken;
 }
-#links
-{
+
+#links {
     display: flex;
     align-items: center;
-    flex: 0.5;
+    gap: 15px;
 }
-#links .lk{
-    padding: 8px;
-    margin: 8px;
-    color: rgb(2, 0, 137);
-    border-radius: 5px;
-    position: relative; 
-    transition: background-color 0.3s ease;
-    text-decoration: none;
 
-}
-#links .dropdown #cl{
+#links .lk, #links .dropdown #cl {
     padding: 8px;
-    margin: 8px;
     color: rgb(2, 0, 137);
     border-radius: 5px;
-    position: relative; 
-    transition: background-color 0.3s ease;
     text-decoration: none;
+    transition: background-color 0.3s ease;
+}
 
-}
-#links .dropdown #cl:hover{
-    color: rgb(2, 0, 137);
-    background-color: rgb(255, 255, 255);
-    transform: scale(1.1);
-    border-radius: 5px;
-}
-#links a:hover
-{
-    background-color: rgb(255, 255, 255);
+#links a:hover, #links .dropdown #cl:hover {
+    background-color: white;
     color: rgb(4, 0, 255);
     transform: scale(1.1);
-    border-radius: 5px;
 }
-#links .dropdown .dropdown-menu a{
+
+#links .dropdown .dropdown-menu a {
     color: red;
     background-color: white;
-    margin: 0px;
 }
-#links .dropdown .dropdown-menu a:hover{
-    transform: none;
+
+#links .dropdown .dropdown-menu a:hover {
     color: rgb(2, 0, 137);
-    background-color: white;
 }
-.loginbtn{
+
+.loginbtn {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
+
 #loginBtn, #signupBtn {
-padding: 10px 20px;
-margin-right: 10px;
-border-radius: 5px;
-font-size: 16px;
-text-decoration: none;
-transition: transform 0.3s ease, background-color 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
+
 #loginBtn {
-background-color: #28a745;
-color: white; 
+    background-color: #28a745;
+    color: white;
 }
 
 #loginBtn:hover {
-background-color: #218838;
-color: white;
-transform: scale(1.1);
+    background-color: #218838;
+    transform: scale(1.1);
 }
 
 #signupBtn {
-background-color: #ff7f50;
-color: white;
+    background-color: #ff7f50;
+    color: white;
 }
 
 #signupBtn:hover {
-background-color: #e86c3a;
-transform: scale(1.1);
+    background-color: #e86c3a;
+    transform: scale(1.1);
 }
+
+/* ===== Burger Menu Styling ===== */
+.burger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.burger .line {
+    height: 3px;
+    background-color: rgb(2, 0, 137);
+    border-radius: 2px;
+}
+
+/* ===== Responsive Design for Tablets (max-width: 768px) ===== */
+@media (max-width: 768px) {
+    .burger {
+        display: flex;
+    }
+
+    #links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgb(223, 235, 250);
+        margin-top: 20px;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    #links.active {
+        display: flex;
+    }
+
+    .loginbtn {
+        display: none; /* Hide desktop login/signup */
+    }
+
+    .mobile-login {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .mobile-login a {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* ===== Responsive Design for Smartphones (max-width: 480px) ===== */
+@media (max-width: 480px) {
+    #logo {
+        width: 70%;
+    }
+
+    #links .lk,
+    #links .dropdown #cl {
+        font-size: 14px;
+    }
+
+    .burger {
+        width: 22px;
+        height: 18px;
+    }
+
+    #loginBtn,
+    #signupBtn {
+        font-size: 14px;
+    }
+}
+

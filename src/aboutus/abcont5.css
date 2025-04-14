@@ -1,3 +1,4 @@
+/* General List Styling */
 ul {
     list-style-type: none;
     padding: 0;
@@ -8,28 +9,102 @@ ul li {
     font-size: 18px;
     line-height: 1.5;
 }
-.contain3{
+
+/* Container for Content Section 3 */
+.contain3 {
     display: flex;
     justify-content: space-around;
     margin: 25px 0px 25px 0px;
     padding: 25px;
-    background-color:  rgb(210, 229, 253);
+    background-color: rgb(210, 229, 253);
 }
-.cont3 h2{
+
+/* Heading Style for Content Section 3 */
+.cont3 h2 {
     font-size: 40px;
     font-weight: bolder;
     color: rgb(2, 0, 137);
 }
-.cont3 p{
+
+/* Paragraph Styling within Content Section 3 */
+.cont3 p {
     padding-left: 15px;
     padding-right: 25px;
     padding-top: 25px;
     font-size: large;
 }
-.contain3 .cont3{
+
+/* Inner Container Styling for Content Section 3 */
+.contain3 .cont3 {
     width: 100%;
     height: auto;
 }
-#header2{
+
+/* Header2 Styling */
+#header2 {
     padding-bottom: 30px;
+}
+
+/* ---------- Media Queries ---------- */
+
+/* Tablets (768px - 991px) */
+@media (max-width: 991px) {
+    .contain3 {
+        flex-direction: column; /* Stack items vertically */
+        padding: 15px;
+    }
+
+    .cont3 h2 {
+        font-size: 30px; /* Smaller font size for h2 */
+    }
+
+    .cont3 p {
+        font-size: 1rem; /* Smaller font size for paragraphs */
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+    }
+}
+
+/* Phones (below 768px) */
+@media (max-width: 767px) {
+    .contain3 {
+        flex-direction: column; /* Stack items vertically */
+        padding: 10px;
+    }
+
+    .cont3 h2 {
+        font-size: 25px; /* Smaller font size for h2 */
+    }
+
+    .cont3 p {
+        font-size: 0.9rem; /* Smaller font size for paragraphs */
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 15px;
+    }
+}
+
+/* Smartphones (max-width: 480px) */
+@media (max-width: 480px) {
+    .contain3 {
+        padding: 5px; /* Reduced padding for smaller screens */
+    }
+
+    .cont3 h2 {
+        font-size: 22px; /* Even smaller font size for h2 */
+        text-align: center; /* Center align heading */
+    }
+
+    .cont3 p {
+        font-size: 0.85rem; /* Smaller font size for paragraphs */
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 10px;
+        text-align: center; /* Center align paragraph */
+    }
+
+    #header2 {
+        padding-bottom: 20px; /* Less padding at the bottom */
+    }
 }

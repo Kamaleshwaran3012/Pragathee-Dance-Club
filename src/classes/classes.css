@@ -120,3 +120,101 @@
         margin-left: 100px;
         border-right: 2px solid black;
     }
+    @media (max-width: 768px) {
+        .container2,
+        .container3 {
+          flex-direction: column;
+          align-items: center;
+          padding: 20px;
+        }
+      
+        .container2 .cont2,
+        .container3 .cont3 {
+          padding: 20px;
+          width: 100%;
+        }
+      
+        .container2 #image2,
+        .container3 #image3 {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          margin-bottom: 20px;
+        }
+      
+        #img2,
+        #img3 {
+          width: 90% !important;
+          height: auto !important;
+        }
+      
+        .cont2 h2,
+        .cont3 h2 {
+          font-size: 30px;
+          text-align: center;
+        }
+      
+        .cont2 #sline,
+        .cont3 p {
+          font-size: medium;
+          padding: 10px;
+          text-align: justify;
+        }
+      
+        .container2 .cont2 button,
+        .container3 .cont3 button {
+          display: block;
+          margin: 20px auto;
+        }
+      
+        .clcont1 p {
+          font-size: 40px;
+          padding-top: 100px;
+          text-align: center;
+        }
+      
+        .clcont4 {
+          flex-direction: column;
+          height: auto;
+          text-align: center;
+          padding: 20px;
+        }
+      
+        .clcont4 #sub {
+          border: none;
+          margin-left: 0;
+          margin-bottom: 10px;
+        }
+      }
+      
+      @media (max-width: 480px) {
+        .cont2 h2,
+        .cont3 h2 {
+          font-size: 24px;
+        }
+      
+        .cont2 #sline,
+        .cont3 p {
+          font-size: 14px;
+        }
+      
+        .clcont1 {
+          height: 200px;
+        }
+      
+        .clcont1 p {
+          font-size: 30px;
+          padding-top: 70px;
+        }
+      
+        .container2,
+        .container3 {
+          margin: 20px 10px;
+        }
+      
+        .container2 .cont2,
+        .container3 .cont3 {
+          padding: 10px;
+        }
+      }
+      

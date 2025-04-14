@@ -1,10 +1,10 @@
 .eventclass1 {
   background-color: rgb(1, 55, 122);
-    color: aliceblue;
-    height: 300px;
-    width: 100%;
+  color: aliceblue;
+  height: 300px;
+  width: 100%;
 }
-.eventclass1 p{
+.eventclass1 p {
   font-size: 60px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   padding: 20px;
@@ -18,9 +18,8 @@
   padding: 2rem;
 }
 
-
 .event-card {
-  background-color:  rgb(233, 243, 255);
+  background-color: rgb(233, 243, 255);
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -51,4 +50,92 @@
   margin-top: 0.5rem;
   font-size: 1rem;
   color: #555;
+}
+
+/* ---------- Media Queries ---------- */
+
+/* Tablets (768px - 991px) */
+@media (max-width: 991px) {
+  .eventclass1 p {
+    font-size: 40px;
+    padding-top: 100px;
+  }
+
+  .events-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .event-info h3 {
+    font-size: 1.1rem;
+  }
+
+  .event-info p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Phones (below 768px) */
+@media (max-width: 767px) {
+  .eventclass1 {
+    height: auto;
+    padding: 30px 10px;
+  }
+
+  .eventclass1 p {
+    font-size: 30px;
+    padding: 20px 10px;
+  }
+
+  .events-container {
+    grid-template-columns: 1fr; /* Single column on small screens */
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .event-info h3 {
+    font-size: 1rem;
+  }
+
+  .event-info p {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 480px) {
+  .eventclass1 {
+    height: auto;
+    padding: 20px 5px;
+  }
+
+  .eventclass1 p {
+    font-size: 24px;
+    padding: 10px 5px;
+  }
+
+  .events-container {
+    grid-template-columns: 1fr;
+    padding: 0.5rem;
+    gap: 0.8rem;
+  }
+
+  .event-card {
+    border-radius: 8px;
+  }
+
+  .event-image {
+    height: 160px;
+  }
+
+  .event-info {
+    padding: 0.75rem;
+  }
+
+  .event-info h3 {
+    font-size: 0.95rem;
+  }
+
+  .event-info p {
+    font-size: 0.85rem;
+  }
 }

@@ -4,7 +4,7 @@ const Clcont1 = () => {
   return (
     <div>
     <div class="clcont1">
-        <p>Classes→</p>
+        <p>CLASSES→</p>
     </div>
     </div>
   )
