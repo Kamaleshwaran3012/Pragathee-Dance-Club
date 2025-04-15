@@ -16,11 +16,13 @@ import Openpage from "./openpage";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const toggleMenu = () => setMenuOpen(!menuOpen);
+  const toggleMenu = () => {
+    setMenuOpen(prev => !prev);
+  };
 
   return (
     <>
-      <nav className="nav">
+      <nav className={`nav ${menuOpen ? "nav-expanded" : ""}`}>
         <span className="logo-container">
           <Link to='/'><img src={logo} id="logo" alt="Logo" /></Link>
         </span>
@@ -32,19 +34,19 @@ const Navbar = () => {
           <div className="line line3"></div>
         </div>
 
-        {/* Links */}
-        <div className={menuOpen ? "nav-links nav-active" : "nav-links"}>
+        {/* Links - hidden on small screens until burger is clicked */}
+        <div className={`nav-links ${menuOpen ? "nav-active" : ""}`}>
           <Link to='/' className="lk" onClick={toggleMenu}>HOME</Link>
           <Link to="/about-us" className="lk" onClick={toggleMenu}>ABOUT US</Link>
           <Dropdown onClick={toggleMenu} />
           <Link to='/events' className="lk" onClick={toggleMenu}>EVENTS</Link>
           <Link to='/contact' className="lk" onClick={toggleMenu}>CONTACT US</Link>
+
+          {/* Mobile-only login button */}
           <div className="mobile-login">
-          <Link to='/login' id="loginBtn">Login</Link>
+            <Link to='/login' id="loginBtn" onClick={toggleMenu}>Login</Link>
+          </div>
         </div>
-        </div>
-        {/* Desktop Login/Signup Buttons */}
-        
       </nav>
 
       <Routes>

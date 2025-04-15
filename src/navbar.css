@@ -6,8 +6,13 @@
     padding: 30px 20px;
     position: relative;
     flex-wrap: wrap;
+    transition: height 0.4s ease;
     z-index: 10;
   }
+  /* Base nav height */
+
+/* When burger is clicked, expand navbar */
+
   
   #logo {
     height: 150px;
@@ -115,15 +120,21 @@
   
   /* ===== Responsive Design for Tablets (max-width: 768px) ===== */
   @media (max-width: 768px) {
+    .nav {
+      transition: height 0.4s ease;
+    }
     .burger {
       display: flex;
     }
   
-    #logo {
-      width: 70%;
+    .nav.nav-expanded {
+      height: 100%;
+      transition: height 0.4s ease;
     }
   
     .nav-links {
+      display: none;
+      opacity: 0;
       position: absolute;
       top: 100%;
       right: 0;
@@ -141,11 +152,14 @@
     }
   
     .nav-links.nav-active {
+      display: flex;
+      transition: transform 0.4s ease-in-out;
+      opacity: 1;
       transform: translateX(0%);
     }
   
     .loginbtn {
-      display: none; /* Hide desktop login/signup */
+      display: none;
     }
   
     .mobile-login {
@@ -155,7 +169,7 @@
       width: 100%;
     }
   
-    .mobile-login a{
+    .mobile-login a {
       width: 100%;
       text-align: center;
       background-color: #eee;
@@ -163,22 +177,49 @@
       border-radius: 5px;
       text-decoration: none;
     }
-    .mobile-login:hover{
-        transform: none;
-    }
   
-    /* Hide mobile login on desktop */
-    @media (min-width: 769px) {
-      .mobile-login {
-        display: none !important;
-      }
+    .mobile-login:hover {
+      transform: none;
     }
   }
+  
+  
+  
   
   /* ===== Responsive Design for Smartphones (max-width: 480px) ===== */
   @media (max-width: 480px) {
     #logo {
       width: 70%;
+    }
+    .nav {
+      transition: height 0.4s ease;
+    }
+  
+    .nav.nav-expanded {
+      height: 300px;
+    }
+  
+    .nav-links {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: rgb(223, 235, 250);
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      gap: 15px;
+      display: none;
+      opacity: 0;
+      transform: translateY(-20px);
+      transition: opacity 0.4s ease, transform 0.4s ease;
+      z-index: 10;
+    }
+  
+    .nav-links.nav-active {
+      display: flex;
+      opacity: 1;
+      transform: translateY(0);
     }
   
     .nav-links .lk,
@@ -195,5 +236,7 @@
     #signupBtn {
       font-size: 14px;
     }
+    /* Base nav height */
+
   }
   

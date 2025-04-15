@@ -43,12 +43,12 @@ ul li Link {
         padding: 30px 10px;
     }
     .container .row p{
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .fa {
         padding: 10px;
-        font-size:20px;
+        font-size:16px;
         width: auto;
         display: inline-block;
 
@@ -56,7 +56,7 @@ ul li Link {
 
     ul {
         padding-left: 0;
-        font-size: 20px;
+        font-size: 16px;
     }
 
     ul li {
@@ -65,7 +65,7 @@ ul li Link {
         font-size: 16px;
     }
     ul li Link {
-        font-size: 16px;
+        font-size: 14px;
         display: inline-block;
     }
 }
