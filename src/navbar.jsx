@@ -25,24 +25,26 @@ const Navbar = () => {
           <Link to='/'><img src={logo} id="logo" alt="Logo" /></Link>
         </span>
 
+        {/* Burger Icon */}
         <div className={`burger ${menuOpen ? "toggle" : ""}`} onClick={toggleMenu}>
-          <div className="line1"></div>
-          <div className="line2"></div>
-          <div className="line3"></div>
+          <div className="line line1"></div>
+          <div className="line line2"></div>
+          <div className="line line3"></div>
         </div>
 
-        <div id="links" className={menuOpen ? "nav-links nav-active" : "nav-links"}>
+        {/* Links */}
+        <div className={menuOpen ? "nav-links nav-active" : "nav-links"}>
           <Link to='/' className="lk" onClick={toggleMenu}>HOME</Link>
           <Link to="/about-us" className="lk" onClick={toggleMenu}>ABOUT US</Link>
           <Dropdown onClick={toggleMenu} />
           <Link to='/events' className="lk" onClick={toggleMenu}>EVENTS</Link>
           <Link to='/contact' className="lk" onClick={toggleMenu}>CONTACT US</Link>
-        </div>
-
-        <div className="loginbtn desktop-only">
+          <div className="mobile-login">
           <Link to='/login' id="loginBtn">Login</Link>
-          <Link to='/signup' id="signupBtn">Signup</Link>
         </div>
+        </div>
+        {/* Desktop Login/Signup Buttons */}
+        
       </nav>
 
       <Routes>

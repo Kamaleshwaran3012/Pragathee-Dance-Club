@@ -107,6 +107,7 @@
     margin: 25px;
 }
 
+
 .cont3 #imag3 {
     width: 100%;
 }
@@ -255,8 +256,12 @@
 
 /* Phones (below 768px) */
 @media (max-width: 767px) {
-    .container1, .container2, .container3, .container4 {
+    .container1, .container2,.container3 .container4 {
         flex-direction: column; /* Stack elements vertically */
+        padding: 20px 10px;
+    }
+    .container3{
+        flex-direction: column-reverse;
         padding: 20px 10px;
     }
 
@@ -272,13 +277,13 @@
     .container2 h2,
     .container3 h2,
     #ourclass {
-        font-size: 28px; /* Smaller heading font size */
+        font-size: 30px; /* Smaller heading font size */
     }
 
     .container1 .cont1 p,
     .container2 #sline,
     .container3 p {
-        font-size: small;
+        font-size: medium;
         width: 100%;
     }
 
@@ -318,6 +323,10 @@
         padding: 15px 5px;
         margin: 10px 0;
     }
+    .container3{
+        flex-direction: column-reverse;
+        padding: 20px 10px;
+    }
 
     /* Ensure all content follows below images */
     .container1 #image1,
@@ -331,7 +340,7 @@
     .container2 h2,
     .container3 h2,
     #ourclass {
-        font-size: 22px; /* Even smaller font size */
+        font-size: 25px; /* Even smaller font size */
     }
 
     .container1 .cont1 p,
