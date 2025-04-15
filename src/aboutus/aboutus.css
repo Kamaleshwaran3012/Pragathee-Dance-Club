@@ -205,13 +205,15 @@
       }
 
     .acont4 {
-        font-size: large; /* Adjust font size */
+        font-size: medium; /* Adjust font size */
         height: auto; /* Adjust height */
+       
     }
 
     .acont4 #sub {
         margin-left: 50px;
-        border-right: none; /* Remove border for smaller screens */
+        height: auto;
+        border: none;
     }
 }
 
@@ -276,7 +278,7 @@
     }
 
     .acont4 {
-        font-size: medium; /* Adjust font size */
+        font-size: small; /* Adjust font size */
         height: auto; /* Adjust height */
     }
 

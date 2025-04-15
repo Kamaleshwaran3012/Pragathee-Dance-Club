@@ -202,10 +202,13 @@
 
 /* Tablets (768px - 991px) */
 @media (max-width: 991px) {
-    .container1, .container2, .container3, .container4 {
+    .container1, .container2, .container4 {
         flex-direction: column; /* Stack the elements vertically */
         align-items: center;
         text-align: center;
+    }
+    .container3{
+        flex-direction: column-reverse;
     }
 
     .container1 #image1,
@@ -256,13 +259,12 @@
 
 /* Phones (below 768px) */
 @media (max-width: 767px) {
-    .container1, .container2,.container3 .container4 {
+    .container1, .container2, .container4 {
         flex-direction: column; /* Stack elements vertically */
         padding: 20px 10px;
     }
     .container3{
         flex-direction: column-reverse;
-        padding: 20px 10px;
     }
 
     /* Ensure all images are above content */
@@ -318,7 +320,7 @@
 
 /* Smartphones (max-width: 480px) */
 @media (max-width: 480px) {
-    .container1, .container2, .container3, .container4 {
+    .container1, .container2, .container4 {
         flex-direction: column;
         padding: 15px 5px;
         margin: 10px 0;

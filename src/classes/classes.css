@@ -121,9 +121,13 @@
         border-right: 2px solid black;
     }
     @media (max-width: 768px) {
-        .container2,
-        .container3 {
+        .container2 {
           flex-direction: column;
+          align-items: center;
+          padding: 20px;
+        }
+        .container3{
+          flex-direction: column-reverse;
           align-items: center;
           padding: 20px;
         }

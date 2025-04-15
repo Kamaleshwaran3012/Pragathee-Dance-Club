@@ -10,7 +10,7 @@ const Footer = () => {
             {/* About Us Section */}
             <div className="col-lg-4 col-md-6">
               <h4 style={{ color: "rgb(2, 0, 137)" }}>About Us</h4>
-              <p style={{ color: "rgb(0, 0, 0)", fontSize:"17px" }}>
+              <p style={{ color: "rgb(0, 0, 0)" }}>
                 Pragathee Dance Club is a vibrant community offering diverse dance classes for all levels.
                 The club focuses on various styles, including classical, contemporary, and popular dances
                 like Bharatanatyam, Ballet, and Western dance. With a strong emphasis on discipline,
@@ -18,11 +18,10 @@ const Footer = () => {
                 for dancers to grow, perform, and showcase their talent.
               </p>
             </div>
-
             {/* Quick Links */}
-            <div className="col-lg-2 col-md-6" style={{ marginLeft: "20px" }}>
+            <div className="col-lg-2 col-md-6" id="ql">
               <h4 style={{ color: "rgb(2, 0, 137)" }}>Quick Links</h4>
-              <ul className="list-unstyled">
+                <ul className="list-unstyled">
                 <li className="linkers"><Link to='/' style={{ textDecoration: "none", color: "black",fontWeight:400 }}>Home</Link></li>
                 <li className="linkers"><Link to='/about-us' style={{ textDecoration: "none", color: "black",fontWeight:400 }}>Aboutus</Link></li>
                 <li className="linkers"><Link to='/classes' style={{ textDecoration: "none", color: "black",fontWeight:400 }}>Classes</Link></li>

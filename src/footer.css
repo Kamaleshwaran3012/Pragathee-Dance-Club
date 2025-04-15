@@ -1,8 +1,9 @@
 footer {
     background: linear-gradient(to top, rgb(86, 178, 239), rgb(223, 235, 250));
     color: black;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
+    font-size: large;
 }
 
 .fa {
@@ -41,23 +42,28 @@ ul li Link {
         text-align: center;
         padding: 30px 10px;
     }
+    .container .row p{
+        font-size: 16px;
+    }
 
     .fa {
         padding: 10px;
-        font-size: 25px;
+        font-size:20px;
         width: auto;
         display: inline-block;
+
     }
 
     ul {
         padding-left: 0;
+        font-size: 20px;
     }
 
     ul li {
         list-style: none;
         margin: 8px 0;
+        font-size: 16px;
     }
-
     ul li Link {
         font-size: 16px;
         display: inline-block;
