@@ -38,7 +38,7 @@ const Navbar = () => {
         <div className={`nav-links ${menuOpen ? "nav-active" : ""}`}>
           <Link to='/' className="lk" onClick={toggleMenu}>HOME</Link>
           <Link to="/about-us" className="lk" onClick={toggleMenu}>ABOUT US</Link>
-          <Dropdown onClick={toggleMenu} />
+          <Dropdown onClick={toggleMenu} className="lk"/>
           <Link to='/events' className="lk" onClick={toggleMenu}>EVENTS</Link>
           <Link to='/contact' className="lk" onClick={toggleMenu}>CONTACT US</Link>
 

@@ -157,6 +157,16 @@
       opacity: 1;
       transform: translateX(0%);
     }
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      z-index: 1000;
+    }
+    
+    .dropdown-menu.show {
+      display: block;
+    }
+    
   
     .loginbtn {
       display: none;

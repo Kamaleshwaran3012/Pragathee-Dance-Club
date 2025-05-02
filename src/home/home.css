@@ -42,7 +42,7 @@
 .container1 .cont1 #bt1:hover {
     background-color: rgb(55, 0, 254);
     transform: scale(1.1);
-    color: rgb(255, 221, 0);
+    color: rgb(255, 255, 255);
 }
 
 .container2 {
