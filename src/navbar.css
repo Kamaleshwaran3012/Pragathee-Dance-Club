@@ -45,12 +45,12 @@
   }
   
   .nav-links .dropdown .dropdown-menu a {
-    color: red;
+    color: rgb(4, 0, 255);
     background-color: white;
   }
   
   .nav-links .dropdown .dropdown-menu a:hover {
-    color: rgb(2, 0, 137);
+    color: rgb(3, 170, 28);
     transform: none;
   }
   
